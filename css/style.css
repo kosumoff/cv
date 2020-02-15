@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
     color: #439696;
     font-weight: normal;
@@ -60,16 +60,14 @@ p {
 }
 
 .top-container {
-    background-color: #c3daf9;
+    background-image: linear-gradient(to right, #c7dcf7 0%, #bcd2f7 29%, #b7cff3 47%, #b8cced 67%, #b8cdec 83%, #bdcee8 100%);
     position: relative;
     padding-top: 100px;
-}
-
-.middle-container {
+    height: 100vh;
 }
 
 .bottom-container {
-    padding: 50px 0 20px;
+    padding: 70px 0 20px;
     background-color: #66BFBF;
 }
 
@@ -89,6 +87,12 @@ p {
     position: absolute;
     left: 300px;
     bottom: 300px;
+}
+
+.right-cloud {
+  position: absolute;
+  right: 350px;
+  bottom: 200px;
 }
 
 .skill-row {
@@ -150,3 +154,22 @@ p {
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
 }
+
+/* Arrow button */
+.container-arrow{
+  text-align: center;
+  width: 100%;
+}
+
+/* Arrow bouncing */
+.container-arrow span{ 
+  display: inline-block; 
+  font-size: 80px;	 
+  animation: .7s down  infinite alternate; 
+  -webkit-animation: .7s down infinite alternate; 
+
+} 
+/* Animation arrow down */ 
+@keyframes down{ 0%{transform:translateY(0px)} 100%{transform:translateY(20px)} } 
+@-webkit-keyframes down{ 0%{-webkit-transform:translateY(0px)} 100%{-webkit-transform:translateY(20px)} } 
+  
